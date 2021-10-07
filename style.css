@@ -127,7 +127,6 @@ main{
 } */
 .home .content .type span{
     position: absolute;
-    display: inline-flex;
     width: 50vw;
     height: 7vh;
     color:aqua;
@@ -136,16 +135,10 @@ main{
 }
 .home .content .type span::before{
     content: "";
-    position: absolute;
     left: 10px;
     width: 100%;
-    animation: typing 20s infinite forwards;
-}
-.home .content .type span::after{
-    height: 20vh;
-    width: 10%;
-    display: block;
-    animation: blink 500ms infinite;
+    animation: typing 13.5s infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 @keyframes typing {
     0.6694%, 18.3488% { content: ""; }
@@ -186,23 +179,38 @@ main{
     87.9023%, 93.2067% { content: "Learne"; }
     89.0056%, 92.1628% { content: "Learner"; }
 }
+.home .content .type span::after{
+    content: "";
+    width: 25vw;
+    height:6vh;
+    border-right: 0.125em solid black;
+    animation: /*cursor 4s linear infinite,*/ blink 500ms linear infinite;
+}
 @keyframes cursor{
-    0%{
+    0%,10%,90%,100%{
         width: 0;
     }
-    50%{
-        width: 100%;
-    }
-    100%{
-        width: 0;
+    40%,60%{
+        width: 19%;
     }
 }
-@keyframes blink{
-    from{
-        background-color: black;
+@media(prefers-reduced-motion) {
+    .home .content .type span::after {
+        animation: none;
     }
+    @keyframes sequence {
+        0%, 100% { content: "Student"; }
+        33.33% { content: "Frontend Developer"; }
+        66.67% { content: "Learner"; }
+      }
+.home .content .type span::before{
+    content:"";
+    animation: sequence 12s linear infinite;
+}
+}
+@keyframes blink{
     to{
-        background: transparent;
+        border-color:transparent;
     }
 }
 footer{
