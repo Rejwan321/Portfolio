@@ -1,0 +1,297 @@
+/* ── About Section ───────────────────────── */
+.about-section {
+  background: var(--bg);
+  padding: 5rem 5vw;
+  border-top: 1px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+/* LEFT - story */
+.about-story p {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.62);
+  margin-bottom: 1.25rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.about-quote {
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--warm);
+  border-left: 2px solid rgba(232,224,208,0.3);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.about-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.info-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+
+.info-item-label {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--aqua);
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.info-item-val {
+  font-family: var(--sans);
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.about-social-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.about-social-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.35rem 0.7rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.about-social-chip:hover {
+  border-color: var(--aqua);
+  color: var(--aqua);
+}
+
+/* RIGHT - principle cards + "What I don't do" */
+.about-principles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.principle-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  background: transparent;
+  transition: border-color 0.25s ease;
+}
+.principle-card:hover { border-color: rgba(255,255,255,0.22); }
+
+.principle-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--warm);
+  margin-top: 7px;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.principle-card h4 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--fg);
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.principle-card p {
+  font-family: var(--sans);
+  font-size: 0.83rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.55);
+}
+
+.dont-card {
+  padding: 1.2rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+.dont-card-label {
+  font-family: var(--mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.28);
+  margin-bottom: 0.9rem;
+}
+
+.dont-card p {
+  font-family: var(--sans);
+  font-size: 0.83rem;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.42);
+  margin-bottom: 0.5rem;
+}
+.dont-card p:last-child { margin-bottom: 0; }
+
+.about-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg);
+  background: var(--purple);
+  border: 1px solid var(--purple);
+  padding: 0.7rem 1.6rem;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: all 0.25s ease;
+}
+.about-cta:hover {
+  background: transparent;
+  color: var(--purple);
+}
+
+/* ── Timeline ────────────────────────────── */
+.timeline-section {
+  background: #060606;
+  padding: 5rem 5vw;
+  border-top: 1px solid var(--border);
+}
+
+.timeline-outer {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.timeline-sticky-head {
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+}
+
+.timeline-sticky-head .section-heading {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.timeline-desc {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 1rem;
+  max-width: 220px;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: var(--border);
+}
+
+.timeline-entry {
+  position: relative;
+  padding: 0 0 2.5rem 2.5rem;
+}
+
+.timeline-entry:last-child { padding-bottom: 0; }
+
+.timeline-dot {
+  position: absolute;
+  left: -4px; top: 6px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.timeline-entry:hover .timeline-dot {
+  border-color: var(--aqua);
+  box-shadow: 0 0 8px rgba(0,229,255,0.4);
+}
+
+.timeline-entry.present .timeline-dot {
+  background: var(--aqua);
+  border-color: var(--aqua);
+  box-shadow: 0 0 10px rgba(0,229,255,0.5);
+}
+
+.timeline-date {
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--aqua);
+  margin-bottom: 0.4rem;
+}
+
+.timeline-entry h4 {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+
+.timeline-entry p {
+  font-family: var(--sans);
+  font-size: 0.83rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ── Responsive ──────────────────────────── */
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .timeline-outer { grid-template-columns: 1fr; }
+  .timeline-sticky-head { position: relative; top: 0; }
+  .timeline-desc { max-width: 100%; }
+}

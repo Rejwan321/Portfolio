@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejwan Azam Mondal — Developer</title>
+  <meta name="description" content="Rejwan Azam Mondal — Computer Science graduate & developer. Building clean, purposeful software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700;800;900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div id="progressBar"></div>
+
+<!-- ── Nav ───────────────────────────────── -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="images/photo1.jpeg" alt="RAM" class="nav-avatar" onerror="this.style.display='none'">
+      <span class="brand-name">R A M</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#skills">Stack</a></li>
+      <li><a href="about.html">Journey</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-status">
+      <div class="status-dot"></div>
+      <span class="status-text">Open to Opportunities</span>
+    </div>
+
+    <button class="nav-toggler" id="navToggler" aria-label="Toggle menu">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="#skills">Stack</a>
+  <a href="about.html">Journey</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ── Hero ──────────────────────────────── -->
+<section class="hero" id="home">
+  <div class="hero-rule"></div>
+
+  <div class="hero-body">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+      <p class="hero-greeting">— Hello, I'm</p>
+
+      <h1 class="hero-name">
+        Rejwan<br>Azam <span class="highlight">Mondal</span>
+      </h1>
+
+      <div class="hero-typing">
+        <span>I build&nbsp;</span>
+        <span id="typedText"></span><span class="cursor">|</span>
+      </div>
+
+      <p class="hero-tagline">B.Tech CS &nbsp;·&nbsp; Narula Institute of Technology &nbsp;·&nbsp; CGPA 8.39</p>
+
+      <div class="hero-btns">
+        <a href="about.html" class="btn-primary-hero">View Journey</a>
+        <a href="contact.html" class="btn-outline-hero">Get in Touch</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/Rejwan321" target="_blank" rel="noopener" class="hero-social-btn" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rejwan-azam-mondal-31789527a" target="_blank" rel="noopener" class="hero-social-btn" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.hackerrank.com/profile/rejwan_azam_mon1" target="_blank" rel="noopener" class="hero-social-btn" title="HackerRank">
+          <i class="fab fa-hackerrank"></i>
+        </a>
+        <a href="contact.html#contactForm" class="hero-social-btn" title="Send a Message">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT – photo -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-inner">
+        <img src="images/photo1.jpeg" alt="Rejwan Azam Mondal" loading="eager">
+      </div>
+      <div class="hero-photo-caption">
+        <span>B.Tech CS &nbsp;·&nbsp; NIT Kolkata</span>
+        <span>Java &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; React</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-indicator-line"></div>
+  </div>
+</section>
+
+<!-- ── Skills / Stack ─────────────────────── -->
+<section id="skills" class="skills-section">
+
+  <div class="section-label">
+    <span class="section-label-text">Stack</span>
+    <div class="section-label-line"></div>
+  </div>
+
+  <div class="skills-grid">
+
+    <!-- Sticky left heading -->
+    <div class="skills-sticky-head">
+      <h2 class="section-heading">Tools I<br>ship with.</h2>
+      <p class="skills-sub">Not just listed — actually used in projects and coursework.</p>
+    </div>
+
+    <!-- Category rows -->
+    <div class="skills-categories">
+
+      <div class="skill-category-row">
+        <div class="skill-category-label" style="color:#a78bfa;">Languages</div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-java" style="color:#f89820;"></i></div>
+            <span class="skill-tile-name">Java</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-js" style="color:#f0db4f;"></i></div>
+            <span class="skill-tile-name">JavaScript</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fas fa-code" style="color:#a8b9cc;"></i></div>
+            <span class="skill-tile-name">C</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fas fa-file-alt" style="color:#8ab2d3;"></i></div>
+            <span class="skill-tile-name">LaTeX</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category-row">
+        <div class="skill-category-label" style="color:#10b981;">Web / Backend</div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-html5" style="color:#e34f26;"></i></div>
+            <span class="skill-tile-name">HTML5</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-css3-alt" style="color:#1572b6;"></i></div>
+            <span class="skill-tile-name">CSS3</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-node-js" style="color:#339933;"></i></div>
+            <span class="skill-tile-name">Node.js</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fas fa-server" style="color:#7a7a8c;"></i></div>
+            <span class="skill-tile-name">Express</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fas fa-leaf" style="color:#6db33f;"></i></div>
+            <span class="skill-tile-name">Spring Boot</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-react" style="color:#61dafb;"></i></div>
+            <span class="skill-tile-name">React</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-bootstrap" style="color:#7952b3;"></i></div>
+            <span class="skill-tile-name">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category-row">
+        <div class="skill-category-label" style="color:#60a5fa;">Databases</div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fas fa-database" style="color:#336791;"></i></div>
+            <span class="skill-tile-name">PostgreSQL</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fas fa-leaf" style="color:#4db33d;"></i></div>
+            <span class="skill-tile-name">MongoDB</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fas fa-table" style="color:#00758f;"></i></div>
+            <span class="skill-tile-name">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category-row">
+        <div class="skill-category-label" style="color:#22d3ee;">DevOps / Tools</div>
+        <div class="skill-tiles">
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-git-alt" style="color:#f05032;"></i></div>
+            <span class="skill-tile-name">Git</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-github" style="color:#e8e8e8;"></i></div>
+            <span class="skill-tile-name">GitHub</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fab fa-docker" style="color:#2496ed;"></i></div>
+            <span class="skill-tile-name">Docker</span>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-tile-icon"><i class="fas fa-terminal" style="color:#888;"></i></div>
+            <span class="skill-tile-name">Linux CLI</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────── -->
+<footer class="site-footer">
+  <span class="footer-copy">© 2021 Rejwan Azam Mondal</span>
+
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rejwan Azam Mondal</title>
+  <meta name="description" content="Get in touch with Rejwan Azam Mondal — let's build something together.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700;800;900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<!-- ── Nav ───────────────────────────────── -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="images/photo1.jpeg" alt="RAM" class="nav-avatar" onerror="this.style.display='none'">
+      <span class="brand-name">R A M</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#skills">Stack</a></li>
+      <li><a href="about.html">Journey</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+
+    <div class="nav-status">
+      <div class="status-dot"></div>
+      <span class="status-text">Open to Opportunities</span>
+    </div>
+
+    <button class="nav-toggler" id="navToggler" aria-label="Toggle menu">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#skills">Stack</a>
+  <a href="about.html">Journey</a>
+  <a href="contact.html" class="active">Contact</a>
+</div>
+
+<!-- ── Page Hero ─────────────────────────── -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-hero-label">Contact</p>
+    <h1 class="page-hero-heading">Let's Talk.</h1>
+  </div>
+</div>
+
+<!-- ── Contact Section ───────────────────── -->
+<section class="contact-section">
+
+  <div class="section-label">
+    <span class="section-label-text">Get In Touch</span>
+    <div class="section-label-line"></div>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- LEFT – info -->
+    <div>
+      <h2 class="section-heading" style="margin-bottom:2rem;">Open to roles<br>&amp; conversations.</h2>
+
+      <div class="contact-info-items">
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-val">rejwan.azam.mondal321@gmail.com</div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="contact-social-label">Find Me Online</p>
+
+      <div class="contact-social-links">
+        <a href="https://github.com/Rejwan321" target="_blank" rel="noopener" class="social-link-row">
+          <span class="social-link-icon"><i class="fab fa-github"></i></span>
+          <span class="social-link-text">GitHub / Rejwan321</span>
+          <span class="social-link-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="https://www.linkedin.com/in/rejwan-azam-mondal-31789527a" target="_blank" rel="noopener" class="social-link-row">
+          <span class="social-link-icon"><i class="fab fa-linkedin-in"></i></span>
+          <span class="social-link-text">LinkedIn</span>
+          <span class="social-link-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="https://www.hackerrank.com/profile/rejwan_azam_mon1" target="_blank" rel="noopener" class="social-link-row">
+          <span class="social-link-icon"><i class="fab fa-hackerrank"></i></span>
+          <span class="social-link-text">HackerRank</span>
+          <span class="social-link-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT – form -->
+    <div class="contact-form-wrap">
+      <h3 class="contact-form-title">Send a Message</h3>
+      <p class="contact-form-sub">Delivered directly to my inbox</p>
+
+      <div id="formAlert"></div>
+
+      <form id="contactForm" novalidate>
+
+        <div class="form-field" id="nameField">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+          <div class="field-error">Please enter your name.</div>
+        </div>
+
+        <div class="form-field" id="emailField">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          <div class="field-error">Please enter a valid email address.</div>
+        </div>
+
+        <div class="form-field" id="messageField">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          <div class="field-error">Please enter your message.</div>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">
+          <i class="fas fa-paper-plane"></i>
+          <span id="btnText">Send Message</span>
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────── -->
+<footer class="site-footer">
+  <span class="footer-copy">© 2021 Rejwan Azam Mondal</span>
+
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

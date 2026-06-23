@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1781967216933,
+    "name": "Test User",
+    "email": "test@example.com",
+    "message": "Hello, this is a test message!",
+    "timestamp": "2026-06-20T14:53:36.933Z"
+  },
+  {
+    "id": 1781991616911,
+    "name": "Test",
+    "email": "test@example.com",
+    "message": "Email delivery test",
+    "timestamp": "2026-06-20T21:40:16.911Z"
+  },
+  {
+    "id": 1782196952430,
+    "name": "Legend",
+    "email": "legendary.player.132@gmail.com",
+    "message": "Hello",
+    "timestamp": "2026-06-23T06:42:32.430Z"
+  }
+]
